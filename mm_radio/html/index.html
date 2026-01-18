@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legacy Radio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root" class="hidden">
+    <div class="panel">
+      <div class="header">
+        <div class="title">Rádio</div>
+        <button class="x" id="btnClose" aria-label="Fechar">✕</button>
+      </div>
+
+      <div class="list" id="presetList"></div>
+
+      <div class="manual">
+        <div class="manualRow">
+          <span class="hint">Canal</span>
+          <input id="manualInput" type="number" inputmode="numeric" placeholder="ex: 777" />
+          <button id="btnConnect" class="btn primary">Conectar</button>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="volRow">
+          <span class="label">🔊</span>
+          <input id="vol" type="range" min="0" max="100" value="50" />
+          <span class="val" id="volVal">50</span>
+        </div>
+
+        <div class="actions">
+          <div class="status" id="status">Desconectado</div>
+          <button id="btnDisconnect" class="btn ghost">Desconectar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
