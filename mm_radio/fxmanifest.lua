@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 name 'mm_radio'
-author 'ChatGPT'
+author 'Smithh'
 description 'Radio UI (NUI) estilo clean para MRI/Qbox (pma-voice)'
 version '1.0.0'
 
